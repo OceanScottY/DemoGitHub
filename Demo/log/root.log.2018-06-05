@@ -1,0 +1,67 @@
+2018-05-28 21:22:42 [ main:4 ] - [ ERROR ] [log4jDemo.Demo.main(Demo.java:26)] 这是root logger的异常
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1931)
+	at log4jDemo.Demo.main(Demo.java:22)
+2018-05-28 21:23:52 [ main:0 ] - [ DEBUG ] [log4jDemo.Demo.main(Demo.java:16)] 你好   我是一个新的文件
+2018-05-28 21:23:52 [ main:2 ] - [  INFO ] [log4jDemo.Demo.main(Demo.java:25)] 异常
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1931)
+	at log4jDemo.Demo.main(Demo.java:22)
+2018-05-28 21:23:52 [ main:4 ] - [ ERROR ] [log4jDemo.Demo.main(Demo.java:26)] 这是root logger的异常
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1931)
+	at log4jDemo.Demo.main(Demo.java:22)
+2018-06-04 15:47:19 [ main:0 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntries(JsonUtil.java:83)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@5d6f64b1; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntries(JsonUtil.java:69)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)
+2018-06-04 15:48:10 [ main:1 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntries(JsonUtil.java:83)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@5d6f64b1; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntries(JsonUtil.java:69)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)
+2018-06-04 17:10:50 [ main:0 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntries(JsonUtil.java:83)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@5d6f64b1; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntries(JsonUtil.java:69)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)
+2018-06-04 18:55:07 [ main:1 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:54)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@78e03bb5; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:43)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)
+2018-06-05 17:16:47 [ main:1 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:54)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@67b92f0a; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:43)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)
+2018-06-05 17:17:50 [ main:0 ] - [ ERROR ] [JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:54)] SerializeUtil getEntries failed.
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('e' (code 101)): was expecting comma to separate OBJECT entries
+ at [Source: [B@78e03bb5; line: 1, column: 27]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:532)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:453)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:655)
+	at JacksonParse.JsonUtil.getEntriesDemo(JsonUtil.java:43)
+	at JacksonParse.JsonUtil.main(JsonUtil.java:136)

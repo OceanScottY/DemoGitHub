@@ -1,0 +1,121 @@
+
+1、整理并熟练字符流拷贝功能代码(今天的核心内容)
+
+	基本流复制
+		(1)一次读取单个字符(21.03_IO流(字符流的拷贝).avi)
+		FileReader fr = new FileReader("aaa.txt");			
+		FileWriter fw = new FileWriter("bbb.txt");			
+		
+		char ch = 0;						
+		while((ch = fr.read()) != -1) {					
+			fw.write(ch);							
+		}
+		
+		fr.close();											
+		fw.close();
+		(2)一次读取多个字符(21.06_IO流(自定义字符数组的拷贝).avi)
+		FileReader fr = new FileReader("aaa.txt");			
+		FileWriter fw = new FileWriter("bbb.txt");			
+		
+		int len= 0;
+		char[] arr = new char[1024*8];						
+		while((len = fr.read(arr)) != -1) {					
+			fw.write(arr, 0, len);							
+		}
+		
+		fr.close();											
+		fw.close();
+
+	字符缓冲流复制(只需要将对应的基本流换成对应的缓冲流)
+
+		(1)一次读取单个字符(21.07_IO流(带缓冲的字符流).avi)
+		BufferedReader br = new BufferedReader(new FileReader("aaa.txt"));	
+		BufferedWriter bw = new BufferedWriter(new FileWriter("bbb.txt"));	
+		
+		int ch= 0;				
+		while((ch = br.read()) != -1) {		
+			bw.write(ch);					
+		}
+		
+		br.close();							
+		bw.close();  
+
+		(2)一次读取多个字符(自己完成)
+		BufferedReader br = new BufferedReader(new FileReader("aaa.txt"));	
+		BufferedWriter bw = new BufferedWriter(new FileWriter("bbb.txt"));	
+		
+		int len= 0;
+		char[] arr = new char[1024*8];						
+		while((len = br.read(arr)) != -1) {					
+			bw.write(arr, 0, len);							
+		}
+		
+		br.close();							
+		bw.close();  
+
+预习内容
+书JAVA基础入门 
+	第八章 IO(输入输出)
+		8.4.3  删除文件及目录
+	复习知识点
+		集合、异常、File、IO、递归
+1、整理并熟练字符流拷贝功能代码(今天的核心内容)
+
+	基本流复制
+		(1)一次读取单个字符(21.03_IO流(字符流的拷贝).avi)
+		FileReader fr = new FileReader("aaa.txt");			
+		FileWriter fw = new FileWriter("bbb.txt");			
+		
+		char ch = 0;						
+		while((ch = fr.read()) != -1) {					
+			fw.write(ch);							
+		}
+		
+		fr.close();											
+		fw.close();
+		(2)一次读取多个字符(21.06_IO流(自定义字符数组的拷贝).avi)
+		FileReader fr = new FileReader("aaa.txt");			
+		FileWriter fw = new FileWriter("bbb.txt");			
+		
+		int len= 0;
+		char[] arr = new char[1024*8];						
+		while((len = fr.read(arr)) != -1) {					
+			fw.write(arr, 0, len);							
+		}
+		
+		fr.close();											
+		fw.close();
+
+	字符缓冲流复制(只需要将对应的基本流换成对应的缓冲流)
+
+		(1)一次读取单个字符(21.07_IO流(带缓冲的字符流).avi)
+		BufferedReader br = new BufferedReader(new FileReader("aaa.txt"));	
+		BufferedWriter bw = new BufferedWriter(new FileWriter("bbb.txt"));	
+		
+		int ch= 0;				
+		while((ch = br.read()) != -1) {		
+			bw.write(ch);					
+		}
+		
+		br.close();							
+		bw.close();  
+
+		(2)一次读取多个字符(自己完成)
+		BufferedReader br = new BufferedReader(new FileReader("aaa.txt"));	
+		BufferedWriter bw = new BufferedWriter(new FileWriter("bbb.txt"));	
+		
+		int len= 0;
+		char[] arr = new char[1024*8];						
+		while((len = br.read(arr)) != -1) {					
+			bw.write(arr, 0, len);							
+		}
+		
+		br.close();							
+		bw.close();  
+
+预习内容
+书JAVA基础入门 
+	第八章 IO(输入输出)
+		8.4.3  删除文件及目录
+	复习知识点
+		集合、异常、File、IO、递归

@@ -1,0 +1,711 @@
+2018-09-21 19:07:10 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 19:07:10 [ nioEventLoopGroup-2-1:153 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x7ca1b87c] REGISTERED
+2018-09-21 19:07:10 [ nioEventLoopGroup-2-1:154 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x7ca1b87c] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:07:10 [ Thread-0:155 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 19:07:10 [ nioEventLoopGroup-2-1:156 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x7ca1b87c, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:07:24 [ nioEventLoopGroup-2-1:0 ] - [  WARN ] [io.netty.util.internal.logging.Slf4JLogger.warn(Slf4JLogger.java:151)] Failed to initialize a channel. Closing: [id: 0x98615f5a]
+java.lang.IllegalArgumentException: maxFrameLength must be a positive integer: 0
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:306)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:268)
+	at io.netty.handler.codec.LengthFieldBasedFrameDecoder.<init>(LengthFieldBasedFrameDecoder.java:236)
+	at NettyTest.ClientTest.NettyClient$1.initChannel(NettyClient.java:51)
+	at NettyTest.ClientTest.NettyClient$1.initChannel(NettyClient.java:48)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:142)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:128)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:121)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1309)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:142)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:128)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:805)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:498)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:412)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:471)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:339)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 19:07:58 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 19:07:59 [ nioEventLoopGroup-2-1:136 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x29957ee7] REGISTERED
+2018-09-21 19:07:59 [ nioEventLoopGroup-2-1:139 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x29957ee7] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:07:59 [ nioEventLoopGroup-2-1:140 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x29957ee7, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:07:59 [ Thread-0:140 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 19:08:05 [ nioEventLoopGroup-2-1:6543 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x29957ee7, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x949ccb69, L:/127.0.0.1:10087 - R:/127.0.0.1:7021]
+2018-09-21 19:08:05 [ nioEventLoopGroup-3-1:6610 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:57)] channelReadComplete
+2018-09-21 19:10:23 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 19:10:23 [ nioEventLoopGroup-2-1:140 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xce02b23c] REGISTERED
+2018-09-21 19:10:23 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xce02b23c] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:10:23 [ Thread-0:143 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 19:10:23 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xce02b23c, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:10:27 [ nioEventLoopGroup-2-1:3980 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xce02b23c, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x66f490d5, L:/127.0.0.1:10087 - R:/127.0.0.1:7098]
+2018-09-21 19:10:27 [ nioEventLoopGroup-3-1:4036 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:58)] channelReadComplete
+2018-09-21 19:12:18 [ nioEventLoopGroup-3-1:115092 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:58)] channelReadComplete
+2018-09-21 19:12:18 [ nioEventLoopGroup-3-1:115093 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:69)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 19:12:25 [ nioEventLoopGroup-2-1:122825 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xce02b23c, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x69a0b5a1, L:/127.0.0.1:10087 - R:/127.0.0.1:7133]
+2018-09-21 19:12:25 [ nioEventLoopGroup-3-2:122862 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:58)] channelReadComplete
+2018-09-21 19:15:57 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 19:15:57 [ nioEventLoopGroup-2-1:163 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03f5b646] REGISTERED
+2018-09-21 19:15:57 [ nioEventLoopGroup-2-1:166 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03f5b646] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:15:57 [ Thread-0:167 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 19:15:57 [ nioEventLoopGroup-2-1:169 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03f5b646, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:16:01 [ nioEventLoopGroup-2-1:4241 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03f5b646, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x61b38f75, L:/127.0.0.1:10087 - R:/127.0.0.1:7205]
+2018-09-21 19:16:01 [ nioEventLoopGroup-3-1:4290 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:17:41 [ nioEventLoopGroup-2-1:104628 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03f5b646, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x3bd992ef, L:/127.0.0.1:10087 - R:/127.0.0.1:7234]
+2018-09-21 19:17:59 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 19:17:59 [ nioEventLoopGroup-2-1:150 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e] REGISTERED
+2018-09-21 19:17:59 [ nioEventLoopGroup-2-1:151 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:17:59 [ Thread-0:152 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 19:17:59 [ nioEventLoopGroup-2-1:152 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:18:06 [ nioEventLoopGroup-2-1:7689 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x95892f17, L:/127.0.0.1:10087 - R:/127.0.0.1:7295]
+2018-09-21 19:18:20 [ nioEventLoopGroup-3-1:21431 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:18:20 [ nioEventLoopGroup-3-1:21437 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:70)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 19:18:37 [ nioEventLoopGroup-2-1:38347 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x59adcbe7, L:/127.0.0.1:10087 - R:/127.0.0.1:7318]
+2018-09-21 19:18:37 [ nioEventLoopGroup-3-2:38385 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:19:15 [ nioEventLoopGroup-2-1:76071 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x3f957d64, L:/127.0.0.1:10087 - R:/127.0.0.1:7342]
+2018-09-21 19:19:15 [ nioEventLoopGroup-3-3:76112 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:29:09 [ nioEventLoopGroup-2-1:670640 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x5e194a0e, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x4ee18c89, L:/127.0.0.1:10087 - R:/127.0.0.1:3463]
+2018-09-21 19:29:09 [ nioEventLoopGroup-3-4:670679 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:30:28 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:75)] FsServer is running
+2018-09-21 19:30:28 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x517ba4c5] REGISTERED
+2018-09-21 19:30:28 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x517ba4c5] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:30:28 [ Thread-0:149 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:78)] Long connection started success
+2018-09-21 19:30:28 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x517ba4c5, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:31:24 [ nioEventLoopGroup-2-1:55512 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x517ba4c5, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xed5e9f8f, L:/127.0.0.1:10087 - R:/127.0.0.1:3613]
+2018-09-21 19:31:24 [ nioEventLoopGroup-3-1:55572 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:38:11 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:75)] FsServer is running
+2018-09-21 19:38:11 [ nioEventLoopGroup-2-1:131 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x16e41d45] REGISTERED
+2018-09-21 19:38:11 [ nioEventLoopGroup-2-1:133 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x16e41d45] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:38:11 [ Thread-0:134 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:78)] Long connection started success
+2018-09-21 19:38:11 [ nioEventLoopGroup-2-1:135 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x16e41d45, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:38:16 [ nioEventLoopGroup-2-1:0 ] - [  WARN ] [io.netty.util.internal.logging.Slf4JLogger.warn(Slf4JLogger.java:151)] Failed to initialize a channel. Closing: [id: 0xb192f2e6]
+java.lang.IllegalArgumentException: Duplicate handler name: frameDecoder
+	at io.netty.channel.DefaultChannelPipeline.checkDuplicateName(DefaultChannelPipeline.java:1047)
+	at io.netty.channel.DefaultChannelPipeline.filterName(DefaultChannelPipeline.java:286)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:198)
+	at io.netty.channel.DefaultChannelPipeline.addLast(DefaultChannelPipeline.java:188)
+	at NettyTest.ClientTest.NettyClient$1.initChannel(NettyClient.java:53)
+	at NettyTest.ClientTest.NettyClient$1.initChannel(NettyClient.java:48)
+	at io.netty.channel.ChannelInitializer.channelRegistered(ChannelInitializer.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:142)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:128)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRegistered(AbstractChannelHandlerContext.java:121)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRegistered(DefaultChannelPipeline.java:1309)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:142)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRegistered(AbstractChannelHandlerContext.java:128)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRegistered(DefaultChannelPipeline.java:805)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:498)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:412)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:471)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:339)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 19:38:53 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:75)] FsServer is running
+2018-09-21 19:38:54 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x86b64b97] REGISTERED
+2018-09-21 19:38:54 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x86b64b97] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:38:54 [ Thread-0:148 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:78)] Long connection started success
+2018-09-21 19:38:54 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x86b64b97, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:38:58 [ nioEventLoopGroup-2-1:4325 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x86b64b97, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x96842b1c, L:/127.0.0.1:10087 - R:/127.0.0.1:3797]
+2018-09-21 19:38:58 [ nioEventLoopGroup-3-1:4375 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:39:23 [ nioEventLoopGroup-3-1:29432 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:39:23 [ nioEventLoopGroup-3-1:29433 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:70)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 19:39:24 [ nioEventLoopGroup-2-1:30996 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x86b64b97, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xeb47940d, L:/127.0.0.1:10087 - R:/127.0.0.1:3819]
+2018-09-21 19:39:24 [ nioEventLoopGroup-3-2:31037 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:42:16 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:75)] FsServer is running
+2018-09-21 19:42:16 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x860f968c] REGISTERED
+2018-09-21 19:42:16 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x860f968c] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:42:16 [ Thread-0:147 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:78)] Long connection started success
+2018-09-21 19:42:16 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x860f968c, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:42:20 [ nioEventLoopGroup-2-1:4081 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x860f968c, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xa2cb4cda, L:/127.0.0.1:10087 - R:/127.0.0.1:3889]
+2018-09-21 19:42:20 [ nioEventLoopGroup-3-1:4136 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:44:25 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:75)] FsServer is running
+2018-09-21 19:44:25 [ nioEventLoopGroup-2-1:160 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa1ca3b34] REGISTERED
+2018-09-21 19:44:25 [ nioEventLoopGroup-2-1:162 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa1ca3b34] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:44:25 [ Thread-0:163 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:78)] Long connection started success
+2018-09-21 19:44:25 [ nioEventLoopGroup-2-1:164 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa1ca3b34, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:44:29 [ nioEventLoopGroup-2-1:4086 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa1ca3b34, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xfbcae2ef, L:/127.0.0.1:10087 - R:/127.0.0.1:3960]
+2018-09-21 19:44:29 [ nioEventLoopGroup-3-1:4142 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 19:59:18 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:76)] FsServer is running
+2018-09-21 19:59:18 [ nioEventLoopGroup-2-1:137 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x116ddb40] REGISTERED
+2018-09-21 19:59:18 [ nioEventLoopGroup-2-1:140 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x116ddb40] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 19:59:18 [ Thread-0:140 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:79)] Long connection started success
+2018-09-21 19:59:18 [ nioEventLoopGroup-2-1:141 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x116ddb40, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 19:59:23 [ nioEventLoopGroup-2-1:4832 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x116ddb40, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x4681f206, L:/127.0.0.1:10087 - R:/127.0.0.1:4206]
+2018-09-21 19:59:23 [ nioEventLoopGroup-3-1:4883 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:59)] channelReadComplete
+2018-09-21 20:00:21 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:76)] FsServer is running
+2018-09-21 20:00:22 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703] REGISTERED
+2018-09-21 20:00:22 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:00:22 [ Thread-0:149 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:79)] Long connection started success
+2018-09-21 20:00:22 [ nioEventLoopGroup-2-1:150 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:02:54 [ nioEventLoopGroup-2-1:152611 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x11da9eb4, L:/127.0.0.1:10087 - R:/127.0.0.1:4335]
+2018-09-21 20:02:54 [ nioEventLoopGroup-3-1:152666 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:03:40 [ nioEventLoopGroup-2-1:198773 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xa8a8bf4e, L:/127.0.0.1:10087 - R:/127.0.0.1:4359]
+2018-09-21 20:03:40 [ nioEventLoopGroup-3-2:198810 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:04:31 [ nioEventLoopGroup-2-1:249869 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x9a6ae703, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x1cb6b2c7, L:/127.0.0.1:10087 - R:/127.0.0.1:4381]
+2018-09-21 20:04:31 [ nioEventLoopGroup-3-3:249905 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:05:03 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:76)] FsServer is running
+2018-09-21 20:05:03 [ nioEventLoopGroup-2-1:136 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78] REGISTERED
+2018-09-21 20:05:03 [ nioEventLoopGroup-2-1:138 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:05:03 [ Thread-0:139 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:79)] Long connection started success
+2018-09-21 20:05:03 [ nioEventLoopGroup-2-1:139 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:05:06 [ nioEventLoopGroup-2-1:3678 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x0979305d, L:/127.0.0.1:10087 - R:/127.0.0.1:4440]
+2018-09-21 20:05:06 [ nioEventLoopGroup-3-1:3732 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:06:21 [ nioEventLoopGroup-2-1:78042 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xf71dd491, L:/127.0.0.1:10087 - R:/127.0.0.1:4465]
+2018-09-21 20:06:21 [ nioEventLoopGroup-3-2:78079 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:07:02 [ nioEventLoopGroup-2-1:119077 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x2f648a78, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x6bd88cc6, L:/127.0.0.1:10087 - R:/127.0.0.1:4491]
+2018-09-21 20:07:02 [ nioEventLoopGroup-3-3:119109 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:54)] channelReadComplete
+2018-09-21 20:10:34 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:76)] FsServer is running
+2018-09-21 20:10:34 [ nioEventLoopGroup-2-1:137 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc17d3f27] REGISTERED
+2018-09-21 20:10:34 [ nioEventLoopGroup-2-1:140 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc17d3f27] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:10:34 [ Thread-0:141 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:79)] Long connection started success
+2018-09-21 20:10:34 [ nioEventLoopGroup-2-1:141 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc17d3f27, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:10:39 [ nioEventLoopGroup-2-1:4561 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc17d3f27, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x1c5d9f87, L:/127.0.0.1:10087 - R:/127.0.0.1:4567]
+2018-09-21 20:10:39 [ nioEventLoopGroup-3-1:4609 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:60)] channelReadComplete
+2018-09-21 20:13:23 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:76)] FsServer is running
+2018-09-21 20:13:23 [ nioEventLoopGroup-2-1:141 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xaeacee5f] REGISTERED
+2018-09-21 20:13:23 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xaeacee5f] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:13:23 [ Thread-0:144 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:79)] Long connection started success
+2018-09-21 20:13:23 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xaeacee5f, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:13:28 [ nioEventLoopGroup-2-1:5243 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xaeacee5f, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x79288186, L:/127.0.0.1:10087 - R:/127.0.0.1:4641]
+2018-09-21 20:13:28 [ nioEventLoopGroup-3-1:5294 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:13:54 [ nioEventLoopGroup-2-1:31131 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xaeacee5f, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xa61b2668, L:/127.0.0.1:10087 - R:/127.0.0.1:4664]
+2018-09-21 20:13:54 [ nioEventLoopGroup-3-2:31167 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:15:09 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:15:09 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf133d9db] REGISTERED
+2018-09-21 20:15:09 [ nioEventLoopGroup-2-1:150 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf133d9db] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:15:09 [ Thread-0:150 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:15:09 [ nioEventLoopGroup-2-1:151 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf133d9db, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:15:13 [ nioEventLoopGroup-2-1:4285 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf133d9db, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xc322c36c, L:/127.0.0.1:10087 - R:/127.0.0.1:4723]
+2018-09-21 20:15:13 [ nioEventLoopGroup-3-1:4335 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:15:34 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:15:34 [ nioEventLoopGroup-2-1:139 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x513dc81a] REGISTERED
+2018-09-21 20:15:34 [ nioEventLoopGroup-2-1:141 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x513dc81a] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:15:34 [ Thread-0:142 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:15:34 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x513dc81a, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:15:40 [ nioEventLoopGroup-2-1:6243 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x513dc81a, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x1b79b148, L:/127.0.0.1:10087 - R:/127.0.0.1:4787]
+2018-09-21 20:16:46 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:16:46 [ nioEventLoopGroup-2-1:171 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2] REGISTERED
+2018-09-21 20:16:46 [ nioEventLoopGroup-2-1:174 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:16:46 [ nioEventLoopGroup-2-1:175 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:16:46 [ Thread-0:175 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:16:50 [ nioEventLoopGroup-2-1:4463 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x21fe6a27, L:/127.0.0.1:10087 - R:/127.0.0.1:4855]
+2018-09-21 20:16:50 [ nioEventLoopGroup-3-1:4508 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:17:08 [ nioEventLoopGroup-2-1:22198 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x96cdb47f, L:/127.0.0.1:10087 - R:/127.0.0.1:4878]
+2018-09-21 20:17:08 [ nioEventLoopGroup-3-2:22236 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:17:16 [ nioEventLoopGroup-2-1:30928 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xac1c57b2, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x31e50d99, L:/127.0.0.1:10087 - R:/127.0.0.1:4900]
+2018-09-21 20:17:17 [ nioEventLoopGroup-3-3:30967 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:17:22 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:17:22 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x457ccff1] REGISTERED
+2018-09-21 20:17:22 [ nioEventLoopGroup-2-1:150 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x457ccff1] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:17:22 [ Thread-0:151 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:17:22 [ nioEventLoopGroup-2-1:152 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x457ccff1, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:17:24 [ nioEventLoopGroup-2-1:2487 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x457ccff1, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xf096f2bb, L:/127.0.0.1:10087 - R:/127.0.0.1:4959]
+2018-09-21 20:17:24 [ nioEventLoopGroup-3-1:2537 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:21:00 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:21:00 [ nioEventLoopGroup-2-1:139 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x07947779] REGISTERED
+2018-09-21 20:21:00 [ nioEventLoopGroup-2-1:141 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x07947779] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:21:00 [ Thread-0:141 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:21:00 [ nioEventLoopGroup-2-1:142 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x07947779, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:21:04 [ nioEventLoopGroup-2-1:4385 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x07947779, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x8a31ad6c, L:/127.0.0.1:10087 - R:/127.0.0.1:5032]
+2018-09-21 20:21:04 [ nioEventLoopGroup-3-1:4438 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:22:59 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:22:59 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x48d53fd7] REGISTERED
+2018-09-21 20:22:59 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x48d53fd7] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:22:59 [ Thread-0:148 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:22:59 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x48d53fd7, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:23:04 [ nioEventLoopGroup-2-1:5070 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x48d53fd7, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xffb1a31f, L:/127.0.0.1:10087 - R:/127.0.0.1:5104]
+2018-09-21 20:23:04 [ nioEventLoopGroup-3-1:5122 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:23:20 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:23:20 [ nioEventLoopGroup-2-1:153 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x542a88ea] REGISTERED
+2018-09-21 20:23:20 [ nioEventLoopGroup-2-1:156 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x542a88ea] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:23:20 [ Thread-0:157 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:23:20 [ nioEventLoopGroup-2-1:158 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x542a88ea, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:23:35 [ nioEventLoopGroup-2-1:14600 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x542a88ea, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xf7d61d96, L:/127.0.0.1:10087 - R:/127.0.0.1:5164]
+2018-09-21 20:23:35 [ nioEventLoopGroup-3-1:14700 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:63)] channelReadComplete
+2018-09-21 20:26:06 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:26:06 [ nioEventLoopGroup-2-1:131 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x66427cd5] REGISTERED
+2018-09-21 20:26:06 [ nioEventLoopGroup-2-1:134 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x66427cd5] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:26:06 [ Thread-0:134 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:26:06 [ nioEventLoopGroup-2-1:135 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x66427cd5, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:26:13 [ nioEventLoopGroup-2-1:6794 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x66427cd5, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xe0857d61, L:/127.0.0.1:10087 - R:/127.0.0.1:5231]
+2018-09-21 20:26:13 [ nioEventLoopGroup-3-1:6853 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:75)] Server Channel occur exception.
+java.lang.ClassCastException: io.netty.buffer.SimpleLeakAwareByteBuf cannot be cast to java.lang.String
+	at NettyTest.ServerTest.FsServerHandler.channelRead(FsServerHandler.java:47)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:335)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:327)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:288)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:262)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:335)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:327)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1336)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:349)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:335)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:26:13 [ nioEventLoopGroup-3-1:6855 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:64)] channelReadComplete
+2018-09-21 20:27:06 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:27:06 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xabd2a899] REGISTERED
+2018-09-21 20:27:06 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xabd2a899] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:27:06 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xabd2a899, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:27:06 [ Thread-0:150 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:27:10 [ nioEventLoopGroup-2-1:3951 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xabd2a899, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xece30aca, L:/127.0.0.1:10087 - R:/127.0.0.1:5293]
+2018-09-21 20:27:10 [ nioEventLoopGroup-3-1:4004 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:66)] channelReadComplete
+2018-09-21 20:28:08 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:28:09 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x3a335529] REGISTERED
+2018-09-21 20:28:09 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x3a335529] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:28:09 [ Thread-0:146 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:28:09 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x3a335529, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:28:15 [ nioEventLoopGroup-2-1:6283 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x3a335529, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x5636302b, L:/127.0.0.1:10087 - R:/127.0.0.1:5365]
+2018-09-21 20:28:15 [ nioEventLoopGroup-3-1:6338 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:66)] channelReadComplete
+2018-09-21 20:31:25 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:31:25 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3dd61d9] REGISTERED
+2018-09-21 20:31:25 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3dd61d9] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:31:25 [ Thread-0:150 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:31:25 [ nioEventLoopGroup-2-1:150 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3dd61d9, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:31:30 [ nioEventLoopGroup-2-1:4906 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3dd61d9, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xcc8d6925, L:/127.0.0.1:10087 - R:/127.0.0.1:7930]
+2018-09-21 20:31:53 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:31:53 [ nioEventLoopGroup-2-1:134 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xb6e85872] REGISTERED
+2018-09-21 20:31:53 [ nioEventLoopGroup-2-1:137 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xb6e85872] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:31:53 [ Thread-0:137 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:31:53 [ nioEventLoopGroup-2-1:138 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xb6e85872, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:33:17 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:33:17 [ nioEventLoopGroup-2-1:130 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec] REGISTERED
+2018-09-21 20:33:17 [ nioEventLoopGroup-2-1:133 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:33:17 [ Thread-0:133 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:33:17 [ nioEventLoopGroup-2-1:134 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:33:30 [ nioEventLoopGroup-2-1:13211 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x163c7eff, L:/127.0.0.1:10087 - R:/127.0.0.1:8044]
+2018-09-21 20:34:13 [ nioEventLoopGroup-3-1:55957 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:62)] channelReadComplete
+2018-09-21 20:34:13 [ nioEventLoopGroup-3-1:55963 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:73)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:34:15 [ nioEventLoopGroup-2-1:57580 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x18099f9d, L:/127.0.0.1:10087 - R:/127.0.0.1:8067]
+2018-09-21 20:34:31 [ nioEventLoopGroup-3-2:73927 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:62)] channelReadComplete
+2018-09-21 20:34:31 [ nioEventLoopGroup-3-2:73928 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:73)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:34:33 [ nioEventLoopGroup-2-1:75357 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xac72f820, L:/127.0.0.1:10087 - R:/127.0.0.1:8089]
+2018-09-21 20:34:44 [ nioEventLoopGroup-3-3:86649 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:62)] channelReadComplete
+2018-09-21 20:34:44 [ nioEventLoopGroup-3-3:86649 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:73)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:34:45 [ nioEventLoopGroup-2-1:87392 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xbba416ec, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xb3de92c8, L:/127.0.0.1:10087 - R:/127.0.0.1:8111]
+2018-09-21 20:35:16 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:35:16 [ nioEventLoopGroup-2-1:132 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x93cf03c0] REGISTERED
+2018-09-21 20:35:16 [ nioEventLoopGroup-2-1:135 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x93cf03c0] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:35:16 [ Thread-0:135 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:35:16 [ nioEventLoopGroup-2-1:136 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x93cf03c0, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:35:22 [ nioEventLoopGroup-2-1:5789 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x93cf03c0, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x4e2beeae, L:/127.0.0.1:10087 - R:/127.0.0.1:8177]
+2018-09-21 20:37:05 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:37:05 [ nioEventLoopGroup-2-1:186 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed] REGISTERED
+2018-09-21 20:37:05 [ nioEventLoopGroup-2-1:188 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:37:05 [ Thread-0:188 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:37:05 [ nioEventLoopGroup-2-1:189 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:37:12 [ nioEventLoopGroup-2-1:6500 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x82be542c, L:/127.0.0.1:10087 - R:/127.0.0.1:8250]
+2018-09-21 20:38:16 [ nioEventLoopGroup-3-1:70783 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:38:16 [ nioEventLoopGroup-3-1:70788 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:79)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:38:17 [ nioEventLoopGroup-2-1:71536 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x380eacbf, L:/127.0.0.1:10087 - R:/127.0.0.1:8282]
+2018-09-21 20:38:25 [ nioEventLoopGroup-3-2:79532 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:38:25 [ nioEventLoopGroup-3-2:79533 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:79)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:38:28 [ nioEventLoopGroup-2-1:82978 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf55232ed, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xf27c40d6, L:/127.0.0.1:10087 - R:/127.0.0.1:8304]
+2018-09-21 20:39:08 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:39:08 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x53f44150] REGISTERED
+2018-09-21 20:39:08 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x53f44150] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:39:08 [ Thread-0:149 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:39:08 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x53f44150, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:39:14 [ nioEventLoopGroup-2-1:6286 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x53f44150, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0xc32cc8c8, L:/219.223.197.76:10087 - R:/219.223.197.76:8366]
+2018-09-21 20:39:27 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:39:27 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa7e9030b] REGISTERED
+2018-09-21 20:39:27 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa7e9030b] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:39:27 [ Thread-0:149 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:39:27 [ nioEventLoopGroup-2-1:149 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa7e9030b, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:39:32 [ nioEventLoopGroup-2-1:4835 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xa7e9030b, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x9aa88bc4, L:/219.223.197.76:10087 - R:/219.223.197.76:8435]
+2018-09-21 20:42:23 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:42:23 [ nioEventLoopGroup-2-1:186 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf2cb0156] REGISTERED
+2018-09-21 20:42:23 [ nioEventLoopGroup-2-1:188 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf2cb0156] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:42:23 [ Thread-0:189 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:42:23 [ nioEventLoopGroup-2-1:190 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf2cb0156, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:42:26 [ nioEventLoopGroup-2-1:2787 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf2cb0156, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x1b6af0e0, L:/219.223.197.76:10087 - R:/219.223.197.76:8539]
+2018-09-21 20:43:05 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:43:05 [ nioEventLoopGroup-2-1:176 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xcfbdddbb] REGISTERED
+2018-09-21 20:43:05 [ nioEventLoopGroup-2-1:178 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xcfbdddbb] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 20:43:05 [ Thread-0:178 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:43:05 [ nioEventLoopGroup-2-1:179 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xcfbdddbb, L:/0:0:0:0:0:0:0:0:10087] ACTIVE
+2018-09-21 20:43:09 [ nioEventLoopGroup-2-1:4028 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xcfbdddbb, L:/0:0:0:0:0:0:0:0:10087] RECEIVED: [id: 0x6deaf4d4, L:/219.223.197.76:10087 - R:/219.223.197.76:8602]
+2018-09-21 20:44:26 [ nioEventLoopGroup-3-1:80497 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:44:26 [ nioEventLoopGroup-3-1:80498 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:79)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:44:30 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:44:30 [ nioEventLoopGroup-2-1:171 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa] REGISTERED
+2018-09-21 20:44:30 [ nioEventLoopGroup-2-1:173 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 20:44:30 [ Thread-0:175 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:44:30 [ nioEventLoopGroup-2-1:175 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 20:44:32 [ nioEventLoopGroup-2-1:2688 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0x3058c83a, L:/219.223.197.76:10187 - R:/219.223.197.76:9519]
+2018-09-21 20:45:08 [ nioEventLoopGroup-3-1:38408 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:45:08 [ nioEventLoopGroup-3-1:38408 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:79)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.buffer.WrappedByteBuf.writeBytes(WrappedByteBuf.java:813)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:45:17 [ nioEventLoopGroup-2-1:47085 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xf3a0ed3d, L:/219.223.197.76:10187 - R:/219.223.197.76:9544]
+2018-09-21 20:46:01 [ nioEventLoopGroup-3-2:91129 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:46:01 [ nioEventLoopGroup-3-2:91130 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:79)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:46:06 [ nioEventLoopGroup-2-1:96670 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x60d952aa, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0x095f693c, L:/219.223.197.76:10187 - R:/219.223.197.76:9572]
+2018-09-21 20:46:06 [ nioEventLoopGroup-3-3:96708 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:68)] channelReadComplete
+2018-09-21 20:46:59 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:46:59 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95] REGISTERED
+2018-09-21 20:46:59 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 20:46:59 [ Thread-0:146 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:46:59 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 20:47:04 [ nioEventLoopGroup-2-1:5088 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xd6a31963, L:/219.223.197.76:10187 - R:/219.223.197.76:9644]
+2018-09-21 20:47:04 [ nioEventLoopGroup-3-1:5143 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:47:50 [ nioEventLoopGroup-3-1:51303 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:47:50 [ nioEventLoopGroup-3-1:51304 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:80)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:47:57 [ nioEventLoopGroup-2-1:58413 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0x21f4b374, L:/219.223.197.76:10187 - R:/219.223.197.76:9671]
+2018-09-21 20:47:58 [ nioEventLoopGroup-3-2:59454 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:47:59 [ nioEventLoopGroup-3-2:60448 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:00 [ nioEventLoopGroup-3-2:61448 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:01 [ nioEventLoopGroup-3-2:62449 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:02 [ nioEventLoopGroup-3-2:63450 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:03 [ nioEventLoopGroup-3-2:64450 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:04 [ nioEventLoopGroup-3-2:65450 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:05 [ nioEventLoopGroup-3-2:66453 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:06 [ nioEventLoopGroup-3-2:67453 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:48:07 [ nioEventLoopGroup-3-2:68453 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:54:31 [ nioEventLoopGroup-3-2:452026 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:54:31 [ nioEventLoopGroup-3-2:452027 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:80)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 20:59:24 [ nioEventLoopGroup-2-1:745411 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xad085e95, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0x185f7632, L:/219.223.197.76:10187 - R:/219.223.197.76:3115]
+2018-09-21 20:59:25 [ nioEventLoopGroup-3-3:746449 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 20:59:42 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 20:59:43 [ nioEventLoopGroup-2-1:139 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03492d9d] REGISTERED
+2018-09-21 20:59:43 [ nioEventLoopGroup-2-1:142 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03492d9d] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 20:59:43 [ Thread-0:143 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 20:59:43 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03492d9d, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 20:59:48 [ nioEventLoopGroup-2-1:5614 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x03492d9d, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xd3c78f02, L:/219.223.197.76:10187 - R:/219.223.197.76:3183]
+2018-09-21 20:59:49 [ nioEventLoopGroup-3-1:6677 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 21:08:24 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 21:08:24 [ nioEventLoopGroup-2-1:142 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xec09a2f4] REGISTERED
+2018-09-21 21:08:24 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xec09a2f4] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 21:08:24 [ Thread-0:144 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 21:08:24 [ nioEventLoopGroup-2-1:145 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xec09a2f4, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 21:08:32 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 21:08:32 [ nioEventLoopGroup-2-1:143 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x6889d15c] REGISTERED
+2018-09-21 21:08:32 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x6889d15c] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 21:08:32 [ Thread-0:146 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 21:08:32 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x6889d15c, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 21:08:37 [ nioEventLoopGroup-2-1:5018 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x6889d15c, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xdf53950f, L:/219.223.197.76:10187 - R:/219.223.197.76:5673]
+2018-09-21 21:08:38 [ nioEventLoopGroup-3-1:6068 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:70)] channelReadComplete
+2018-09-21 21:10:24 [ nioEventLoopGroup-3-1:111531 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:70)] channelReadComplete
+2018-09-21 21:10:24 [ nioEventLoopGroup-3-1:111531 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:81)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 21:10:25 [ nioEventLoopGroup-2-1:113250 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x6889d15c, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xb55e731f, L:/219.223.197.76:10187 - R:/219.223.197.76:5701]
+2018-09-21 21:10:27 [ nioEventLoopGroup-3-2:114288 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:70)] channelReadComplete
+2018-09-21 21:10:33 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 21:10:33 [ nioEventLoopGroup-2-1:129 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf9d5c8a1] REGISTERED
+2018-09-21 21:10:33 [ nioEventLoopGroup-2-1:131 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf9d5c8a1] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 21:10:33 [ Thread-0:132 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 21:10:33 [ nioEventLoopGroup-2-1:133 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf9d5c8a1, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 21:10:40 [ nioEventLoopGroup-2-1:7021 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xf9d5c8a1, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xcd2e0618, L:/219.223.197.76:10187 - R:/219.223.197.76:5764]
+2018-09-21 21:10:41 [ nioEventLoopGroup-3-1:8082 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:69)] channelReadComplete
+2018-09-21 21:12:04 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 21:12:04 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3025ffc] REGISTERED
+2018-09-21 21:12:04 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3025ffc] BIND: 0.0.0.0/0.0.0.0:10187
+2018-09-21 21:12:04 [ Thread-0:147 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 21:12:04 [ nioEventLoopGroup-2-1:148 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3025ffc, L:/0:0:0:0:0:0:0:0:10187] ACTIVE
+2018-09-21 21:12:08 [ nioEventLoopGroup-2-1:3416 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3025ffc, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0xe5651441, L:/219.223.197.76:10187 - R:/219.223.197.76:5840]
+2018-09-21 21:12:09 [ nioEventLoopGroup-3-1:4473 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:30 [ nioEventLoopGroup-3-1:25444 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:30 [ nioEventLoopGroup-3-1:25445 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:76)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 21:12:34 [ nioEventLoopGroup-2-1:29932 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0xc3025ffc, L:/0:0:0:0:0:0:0:0:10187] RECEIVED: [id: 0x1308207e, L:/219.223.197.76:10187 - R:/219.223.197.76:5862]
+2018-09-21 21:12:35 [ nioEventLoopGroup-3-2:30970 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:36 [ nioEventLoopGroup-3-2:31965 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:37 [ nioEventLoopGroup-3-2:32966 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:38 [ nioEventLoopGroup-3-2:33967 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:39 [ nioEventLoopGroup-3-2:34967 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:40 [ nioEventLoopGroup-3-2:35968 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:41 [ nioEventLoopGroup-3-2:36969 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:42 [ nioEventLoopGroup-3-2:37970 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:43 [ nioEventLoopGroup-3-2:38970 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:44 [ nioEventLoopGroup-3-2:39970 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:48 [ nioEventLoopGroup-3-2:43331 ] - [  INFO ] [NettyTest.ServerTest.FsServerHandler.channelReadComplete(FsServerHandler.java:65)] channelReadComplete
+2018-09-21 21:12:48 [ nioEventLoopGroup-3-2:43331 ] - [ ERROR ] [NettyTest.ServerTest.FsServerHandler.exceptionCaught(FsServerHandler.java:76)] Server Channel occur exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1098)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:112)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:544)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:485)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:399)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:371)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:742)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:145)
+	at java.lang.Thread.run(Thread.java:748)
+2018-09-21 21:24:58 [ Thread-0:0 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:77)] FsServer is running
+2018-09-21 21:24:58 [ nioEventLoopGroup-2-1:144 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x1c595e96] REGISTERED
+2018-09-21 21:24:58 [ nioEventLoopGroup-2-1:146 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x1c595e96] BIND: 0.0.0.0/0.0.0.0:10087
+2018-09-21 21:24:58 [ Thread-0:147 ] - [  INFO ] [NettyTest.ServerTest.FsServer.start(FsServer.java:80)] Long connection started success
+2018-09-21 21:24:58 [ nioEventLoopGroup-2-1:147 ] - [  INFO ] [io.netty.util.internal.logging.Slf4JLogger.info(Slf4JLogger.java:101)] [id: 0x1c595e96, L:/0:0:0:0:0:0:0:0:10087] ACTIVE

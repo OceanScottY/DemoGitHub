@@ -1,0 +1,10 @@
+2018-05-28 21:20:48 [ main:0 ] - [ DEBUG ] [log4jDemo.Demo.main(Demo.java:16)] 你好   我是一个新的文件
+2018-05-28 21:20:48 [ main:2 ] - [  INFO ] [log4jDemo.Demo.main(Demo.java:25)] 异常
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1931)
+	at log4jDemo.Demo.main(Demo.java:22)
+2018-05-28 21:22:42 [ main:0 ] - [ DEBUG ] [log4jDemo.Demo.main(Demo.java:16)] 你好   我是一个新的文件
+2018-05-28 21:22:42 [ main:2 ] - [  INFO ] [log4jDemo.Demo.main(Demo.java:25)] 异常
+java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+	at java.lang.String.substring(String.java:1931)
+	at log4jDemo.Demo.main(Demo.java:22)

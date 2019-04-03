@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="Demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.46.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-all-4.1.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-log4j12-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/umpayopenssl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcmail-jdk15on-160.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpkix-jdk15on-160.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-160.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-examples-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-excelant-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-ooxml-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-ooxml-schemas-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi-scratchpad-3.10-FINAL-20140208.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/poi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-httpclient-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mybatis-3.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/nucypher-crypto-oss-master.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/prov-1.58.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpg-jdk15on-1.58.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpkix-jdk15on-1.58.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/core-1.58.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/java-erasure-master.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/poi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpg-jdk15on-1.58.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcpkix-jdk15on-1.58.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/core-1.58.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/prov-1.58.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
